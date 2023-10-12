@@ -714,3 +714,80 @@ ul {
 .form-footer{
     display: flex;
 }
+
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2F4266;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.20));
+    top: 0;
+    left: 0;
+}
+
+.modal{
+    width: 408px;
+    height: 584px;
+    flex-shrink: 0;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.button-close{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background-color:  #E7E9FC;
+    border-radius: 50%;
+    border: solid #0000001A;
+    border-width: 1px;
+    padding: 0px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+}
+
+.button-close-icon{
+    fill: black;
+}
+
+.modal-text{
+    color:  #2E2F42;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    padding-top: 72px;
+}
+
+.modal-form{
+
+}
+
+.form-input{
+
+}
+
+.form-label{
+    color:  #8E8F99;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+}
+
+.form-input{
+
+}
+
+.input-icon{
+    fill: #4D5AE5;
+}
