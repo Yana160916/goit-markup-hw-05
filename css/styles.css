@@ -784,6 +784,7 @@ padding-left: 24px;
     flex-shrink: 0;
     width: 100%;
     background-color: transparent;
+    padding-top: 11px;
 }
 
 .form-label{
@@ -795,7 +796,6 @@ padding-left: 24px;
     display: block;
     flex-direction: column;
     margin-top: 16px;
-    outline: transparent;
 }
 
 .form-input{
