@@ -749,10 +749,6 @@ ul {
     border-radius: 50%;
     border: solid #0000001A;
     border-width: 1px;
-    padding: 0px;
-    position: absolute;
-    right: 24px;
-    top: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -761,6 +757,12 @@ ul {
 
 .button-close-icon{
     fill: black;
+}
+
+.close-wnd{
+    right: 24px;
+    top: 24px;
+    position: absolute;
 }
 
 .modal-text{
