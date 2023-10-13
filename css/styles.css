@@ -943,13 +943,12 @@ padding-left: 0px;
 
 
 .checkbox-input:checked + .checkbox-label > .terms-style {
-    background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
+    background-color: #404BBF;
+    border-color: #404BBF;
   }
 
-.checkbox-icon{
-}
 
 .button-send{
     font-family: "Roboto", sans-serif;
