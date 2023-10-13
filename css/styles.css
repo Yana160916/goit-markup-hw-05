@@ -652,7 +652,7 @@ ul {
 }
 
 .e-mail-container{
-    display: flex;
+    display: block;
     gap: 16px;
 }
 
@@ -664,22 +664,23 @@ ul {
     align-items: center;
     gap: 16px;
     border-radius: 4px;
-    font-family: Roboto;
+    font-family: "Roboto" sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     text-align: center;
     border: none;
-    display: inline-flex;
+    display: flex;
     margin-left: 24px;
-    margin-top: 40px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
+    cursor: pointer;
 }
 
 .icon-footer{
     fill: white;
+    margin-left: 16px;
 }
 
 .label{
@@ -692,6 +693,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 16px;
     
 }
 
@@ -701,14 +703,15 @@ ul {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 264px;
     height: 40px;
-    flex-shrink: 0;
     background: var(--NAVY-BLUE, #2E2F42);
     color: #ffffff;
+    background-color: transparent;
     font-size: 12px;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .input::placeholder{
@@ -717,6 +720,11 @@ ul {
 
 .form-footer{
     display: flex;
+}
+
+.label-footer{
+    gap: 24px;
+
 }
 
 /* Modal */
@@ -729,8 +737,7 @@ ul {
     filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.14)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.12)) drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.20));
     top: 0;
     left: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 
 .modal{
@@ -777,8 +784,11 @@ ul {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close:hover .button-close-icon,
-.button-close:hover .button-close-icon{
+.button-close:hover{
+    fill: #ffffff;
+}
+
+.button-close:hover{
     fill: #ffffff;
 }
 
@@ -789,6 +799,7 @@ ul {
     font-weight: 500;
     line-height: 1.5; 
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .modal-form{
@@ -800,7 +811,7 @@ padding-left: 0px;
     color:  #8E8F99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     display: block;
     flex-direction: column;
@@ -817,6 +828,7 @@ padding-left: 0px;
     padding-left: 38px;
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: transparent;
 }
 
 .form-input:focus{
@@ -856,7 +868,7 @@ padding-left: 0px;
     resize: none;
     position: relative;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px;
     background-color: transparent;
     border-radius: 4px;
     width: 100%;
@@ -864,7 +876,7 @@ padding-left: 0px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-
+    outline: transparent;
 }
 
 .texterea-block::placeholder{
@@ -876,14 +888,15 @@ padding-left: 0px;
 }
 
 .checkbox{
-gap: 8px;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
 .checkbox-label{
-    color:  #8E8F99;
+    color:  #8e8f99;
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16; 
+    line-height: 1.17; 
     letter-spacing: 0.04em;
 }
 
@@ -907,9 +920,29 @@ gap: 8px;
 .checkbox-link{
     text-decoration-line: underline;
     color: #4D5AE5;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    fill: transparent;
+}
+
+.checkbox-input:checked + .checkbox-label .terms-style {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.checkbox-icon{
 }
 
 .button-send{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
