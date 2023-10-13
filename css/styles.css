@@ -919,19 +919,11 @@ padding-left: 0px;
 
 }
 
-.box-checkbox{
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    stroke-width: 1px;
-    margin-bottom: 24px;
-    stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-}
 
 .checkbox-link{
     text-decoration-line: underline;
     color: #4D5AE5;
-    width: 16px;
+    min-width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px; 
@@ -940,6 +932,8 @@ padding-left: 0px;
     align-items: center;
     justify-content: center; 
     fill: transparent;
+    padding: 0px;
+    margin: 0px;
 }
 
 .checkbox-input:checked+.checkbox-label.terms-style{
