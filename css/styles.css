@@ -752,10 +752,9 @@ ul {
     top: 24px;
     right: 24px;
     flex-shrink: 0;
-    background-color:  #E7E9FC;
+    fill: #E7E9FC;
     border-radius: 50%;
-    border: solid;
-    stroke: #0000001A;
+    border: solid #0000001A;
     border-width: 1px;
     position: absolute;
     display: flex;
@@ -819,25 +818,28 @@ padding-left: 0px;
     letter-spacing: 0.04em;
     display: block;
     flex-direction: column;
-    margin-top: 16px;
+    margin-top: 11px;
 }
 
 .form-input{
-        padding-bottom: 11px;
+    padding-left: 62px;
 }
 
 .input-icon{
-    fill: #4D5AE5;
+    fill: black;
     position: absolute;
     left: 16px;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
-.input-wrap{
-    position: relative;
-    padding-top: 4px;
-    margin-right: 24px;
-}
+
 
 .input-name{
-    margin-bottom: 8px;
+    margin-bottom: 11px;
+
+}
+
+.modal-input-wrap{
+    position: relative;
 }
