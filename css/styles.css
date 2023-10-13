@@ -754,7 +754,8 @@ ul {
     flex-shrink: 0;
     background-color:  #E7E9FC;
     border-radius: 50%;
-    border: solid #0000001A;
+    border: solid;
+    stroke: #0000001A;
     border-width: 1px;
     position: absolute;
     display: flex;
