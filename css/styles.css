@@ -711,6 +711,10 @@ ul {
     padding-left: 16px;
 }
 
+.input::placeholder{
+    color: #ffffff;
+}
+
 .form-footer{
     display: flex;
 }
@@ -753,6 +757,7 @@ ul {
 
 .button-close-icon{
     fill: black;
+    align-items: center;
 }
 
 .modal-text{
@@ -766,11 +771,15 @@ ul {
 }
 
 .modal-form{
-
+padding-left: 24px;
 }
 
 .form-input{
-
+    border-radius: 4px;
+    border: 1px solid  #4D5AE5;
+    width: 360px;
+    height: 40px;
+    flex-shrink: 0;
 }
 
 .form-label{
@@ -781,7 +790,7 @@ ul {
     letter-spacing: 0.04em;
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
+    margin-top: 16px;
 }
 
 .form-input{
@@ -790,4 +799,11 @@ ul {
 
 .input-icon{
     fill: #4D5AE5;
+    position: absolute;
+    left: 16px;
+}
+
+.input-wrap{
+    position: relative;
+    padding-top: 4px;
 }
