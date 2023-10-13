@@ -672,10 +672,11 @@ ul {
     text-align: center;
     border: none;
     display: flex;
-    margin-left: 24px;
+    margin-left: 288px;
     min-width: 165px;
     height: 40px;
     cursor: pointer;
+    
 }
 
 .icon-footer{
@@ -691,7 +692,6 @@ ul {
     letter-spacing: 0.02em;
     align-content: center;
     display: flex;
-    flex-direction: column;
     gap: 16px;
     margin-bottom: 16px;
     
@@ -720,6 +720,7 @@ ul {
 
 .form-footer{
     display: flex;
+    flex-direction: column;
 }
 
 .label-footer{
@@ -862,6 +863,10 @@ padding-left: 0px;
     margin-bottom: 16px;
 }
 
+.texterea:focus{
+    border-color: #4D5AE5;
+}
+
 
 .texterea-block{
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -936,11 +941,12 @@ padding-left: 0px;
     margin: 0px;
 }
 
-.checkbox-input:checked+.checkbox-label.terms-style{
+
+.checkbox-input:checked + .terms-style {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
-}
+  }
 
 .checkbox-icon{
 }
