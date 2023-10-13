@@ -753,10 +753,13 @@ ul {
     position: absolute;
     right: 24px;
     top: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .button-close-icon{
     fill: black;
+    display: flex;
     align-items: center;
 }
 
